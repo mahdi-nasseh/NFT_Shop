@@ -1,0 +1,433 @@
+/* default styel */
+@font-face {
+    font-family: kalameh;
+    font-weight: normal;
+    src: url(../fonts/Kalameh-Regular.a038ae9.woff2);
+}
+
+@font-face {
+    font-family: kalameh-bold;
+    font-weight: bold;
+    src: url(../fonts/Kalameh-Bold.cc91ac9.woff2);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'kalameh', serif;
+}
+
+:root {
+    --primary: rgba(9, 16, 40, 1);
+    --secondary: rgba(255, 60, 0, 1);
+}
+
+body {
+    background-color: var(--primary);
+}
+
+ul li {
+    list-style: none;
+}
+
+/* finish default styl */
+
+/* customize styles */
+header::before {
+    content: '';
+    width: 904px;
+    height: 879px;
+    background-image: radial-gradient(#3D0D58 38%, #070F1C 0%);
+    filter: blur(70px);
+    top: -300px;
+    right: -280px;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+
+.btn_header {
+    font-size: 24px;
+    width: 45%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to right, #7011AD, #BC0505, #FC630F);
+
+}
+
+.main_img_header::before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../img/Path.png);
+    width: 37px;
+    height: 48px;
+    top: 6rem;
+    right: 7rem;
+}
+
+.main_img_header::after {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../img/Path\ \(1\).png);
+    width: 66px;
+    height: 30px;
+    bottom: 5.5rem;
+    left: 1rem;
+}
+
+.artists_div {
+    width: 297px;
+    height: 78px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    top: 23rem;
+    right: 3rem;
+    border-radius: 20px;
+}
+
+.search_form {
+    width: 55%;
+    height: 68px;
+}
+
+.search_input {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.search_input:focus {
+    outline: none !important;
+}
+
+.search_input::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.wallet_div {
+    background-image: linear-gradient(to left top, #FC280C 0%, #07101D 100%);
+    padding: 1px;
+    height: 188px;
+}
+
+.wallet_div_metamask::after {
+    border-top: #FC280C 2px solid;
+}
+
+.wallet_div_coinbais {
+    background-image: linear-gradient(to left top, #00D1FF 0%, #07101D 100%);
+}
+
+.wallet_div_coinbais::after {
+    border-top: #00D1FF 2px solid;
+}
+
+.wallet_div_exodus {
+    background-image: linear-gradient(to left top, #760AFF 0%, #07101D 100%);
+}
+
+.wallet_div_exodus::after {
+    border-top: #760AFF 2px solid;
+}
+
+.wallet_div_uniswap {
+    background-image: linear-gradient(to left top, #FE007A 0%, #07101D 100%);
+}
+
+.wallet_div_uniswap::after {
+    border-top: #FE007A 2px solid;
+}
+
+.wallet_div_bainance {
+    background-image: linear-gradient(to left top, #FFBF1C 0%, #07101D 100%);
+}
+
+.wallet_div_bainance::after {
+    border-top: #FFBF1C 2px solid;
+}
+
+.wallet_div>div {
+    background-color: #0d192c;
+}
+
+.wallet_div::after {
+    content: '';
+    background-color: var(--primary);
+    position: absolute;
+    width: 50px;
+    height: 28px;
+    transform: rotate(-53deg);
+    bottom: -2px;
+    right: -20px;
+}
+
+.box_hot_bids {
+    background-color: rgb(255, 255, 255, 0.10);
+}
+
+.like_time_bids {
+    left: 3rem;
+    top: 28px;
+}
+
+.time_card_bids {
+    height: 58px;
+    width: 172px;
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.heart_card_bids {
+    height: 58px;
+    width: 58px;
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(20px);
+}
+
+.box_property {
+    height: 240px;
+}
+
+.box_property_1 {
+    border: 1px solid #00FF1A;
+    background-image: linear-gradient(to bottom right, rgba(0, 255, 26, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.box_property_2 {
+    border: 1px solid rgba(83, 0, 255, 1);
+    background-image: linear-gradient(to bottom right, rgba(74, 1, 224, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.box_property_3 {
+    border: 1px solid rgba(255, 31, 0, 1);
+    background-image: linear-gradient(to bottom right, rgba(255, 19, 4, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.box_icon_property {
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    width: 90px;
+    height: 90px;
+    top: -3rem;
+    right: 2rem;
+}
+
+.text_box_trend {
+    height: 214px;
+    background-color: rgb(255, 255, 255, 0.1);
+    padding-top: 6rem;
+}
+
+.img_box_trend {
+    transform: translatey(80px);
+}
+
+.circle_3 {
+    top: 12rem;
+    right: -5rem;
+    width: 400px;
+    height: 400px;
+    background-image: radial-gradient(rgba(189, 9, 950, 0.13) 37%, rgba(7, 15, 28, 0) 100%);
+    /* z-index: -1; */
+    filter: blur(20px);
+}
+
+.top_creator_box {
+    height: 182px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.news_letters_box {
+    height: 324px;
+    box-shadow: 0 0 140px 0 rgb(255, 255, 255, 0.4);
+}
+
+.news_letters_box::before {
+    content: '';
+    background-image: url(../img/news-letters-pattern.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 982px;
+    width: 726px;
+    top: 0rem;
+    left: -3rem;
+}
+
+.news_letters_box::after {
+    content: '';
+    background-image: url(../img/news-letters_pattern2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 982px;
+    width: 726px;
+    top: 4rem;
+    right: -19rem;
+}
+
+.footer_icon {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+footer {
+    margin-top: 85px;
+    border-top: 1px solid rgb(255, 255, 255, 0.1);
+    background-color: rgb(6, 19, 40);
+}
+
+.ellips_4 {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.07), rgba(7, 15, 28, 0));
+    width: 615px;
+    height: 584px;
+    bottom: -12rem;
+    right: -2rem;
+    filter: blur(30px);
+}
+
+/* finish customize styles */
+
+
+/* my styles => (colors and font size) */
+.bg-main-gradiant {
+    background-image: linear-gradient(to right, #7011AD, #BC0505, #FC630F);
+}
+
+.bg-orange {
+    background-color: var(--secondary);
+}
+
+.border-orange {
+    border: var(--secondary) solid 1px;
+}
+
+.text-orange {
+    color: var(--secondary);
+}
+
+.fs-64px {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.fs-24px {
+    font-size: 24px;
+}
+
+.fs-22px {
+    font-size: 22px !important;
+}
+
+.fs-36px {
+    font-size: 36px !important;
+}
+
+/* finish my styles => (colors and font size) */
+
+
+/* larg breakepoint */
+@media screen and (max-width:991.98px) {
+    .bg-md-dark {
+        background-color: var(--bs-secondary-color);
+    }
+}
+
+/* medium breakepoint */
+@media screen and (max-width: 767.99px) {
+    .btn_header {
+        font-size: 20px;
+        height: 53px;
+        width: 55%;
+    }
+
+    .serch_header_form {
+        justify-content: center !important;
+    }
+
+    header::before {
+        display: none;
+        /* width: 500px;
+        right: -150px; */
+    }
+
+    .like_time_bids {
+        left: 0.8rem;
+        top: 28px;
+    }
+
+    .fs-24px {
+        font-size: 20px;
+    }
+
+    .fs-64px {
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
+
+/* smal screen */
+@media screen and (max-width: 567px) {
+    .like_time_bids {
+        left: 6rem;
+        top: 28px;
+    }
+
+    .fs-24px {
+        font-size: 14px;
+    }
+
+    .fs-22px {
+        font-size: 16px !important;
+    }
+
+    .fs-36px {
+        font-size: 22px !important;
+    }
+
+    .fs-64px {
+        font-size: 27px;
+    }
+
+    .btn_header {
+        height: 43px;
+        font-size: 16px;
+    }
+}
+
+/* x-small screen */
+@media screen and (max-width: 460px) {
+    .like_time_bids {
+        left: 3rem;
+        top: 28px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .like_time_bids {
+        left: 2rem;
+        top: 28px;
+    }
+
+    .fs-36px {
+        font-size: 18px !important;
+    }
+
+    .fs-22px {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .fs-36px {
+        font-size: 14px !important;
+    }
+}
